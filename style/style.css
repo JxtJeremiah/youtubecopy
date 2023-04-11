@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+}
+  
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+    justify-content: space-around;
+}
+.search{
+    padding: 10px;
+	border-radius: 5px;
+	border: none;
+	font-size: 1.2rem;
+}
+
+.menu{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu img{
+    height: 15px;
+}
+.menu a {
+	margin-right: 20px;
+}
+
+.logo{
+    padding-top: 5px;
+}
+
+.logo img{
+    height: 40px;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    background-color: white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 0 16px;
+}
+        
+.search input{
+border: 1px solid rgb(175, 162, 162);
+border-radius: 20px 0px 0px 20px;
+padding: 5px;
+font-size: 15px;
+color: rgba(6, 7, 7, 0.822);
+}
+        
+.search button{
+    border: none;
+    border-radius: 0;
+    background-color: #ff0000;
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+nav {
+    background-color: white;
+    border-bottom: 1px solid #e6e6e6;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 14
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex
+}
+
+nav ul li {
+    margin-right: 16px
+}
+
+nav ul li:last-child {
+    margin-right: 0
+}
+
+nav ul li a {
+    color: #606060;
+    text-decoration: none
+}
+
+nav ul li a:hover {
+    color: #ff0000
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 24px
+}
+
+.video {
+    width: calc((100% / 3) - 16px);
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+        
+.video:last-child {
+    margin-right: 0;
+}
+        
+.video img {
+    width: 100%;
+}
+        
+.video h2 {
+    margin-top: 8px;
+    margin-bottom: 2px;
+    font-size: 12px;
+}
+        
+.title{
+    margin: 0;
+    color: #606060;
+    font-size: 10px;
+}
+        
+.view{
+    margin: 0;
+    color: #606060;
+    font-size: 9px;
+}
+        
+footer {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 16px;
+    font-size: 14px;
+    margin-top: 24px;
+}
+
+@media only screen and (max-width: 600px){
+    .container {
+        display: block ;
+    }
+    .search{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+    .logo img{
+        height: 50px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 0px;
+    }
+    .header{
+        display: flex;
+        justify-content: space-around;
+    }
+    nav {
+        height: auto;
+        margin-bottom: 10px;
+    }
+      
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    nav a{
+        font-size: 11px;
+        padding: 20px;
+    } 
+    .main {
+        margin: 10px;
+    }
+      
+    .video {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+      
+    .video h2 {
+        font-size: 14px;
+    }
+      
+    .title, .view {
+        font-size: 12px;
+    }
+}
